@@ -2,8 +2,9 @@ import json
 
 import requests
 import telebot
+import os
 
-TOKEN = '746320164:AAEOrs5dcD-9HKUngbAbzO6B4tPvabj_Mvo'
+TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 API_PATH = 'http://127.0.0.1:8000'
 
